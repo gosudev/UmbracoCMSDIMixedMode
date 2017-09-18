@@ -13,7 +13,10 @@ namespace UmbracoCMSDIMixedMode.Web.Services
             {
                 "Autofac",
                 "Ninject",
-                "Unity"
+                "Unity",
+                "Castle Windsor",
+                "Spring.NET",
+                "StructureMap"
             };
         }
     }
