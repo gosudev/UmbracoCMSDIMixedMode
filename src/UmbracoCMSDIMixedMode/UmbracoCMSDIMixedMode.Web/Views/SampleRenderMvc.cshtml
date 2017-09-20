@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<UmbracoCMSDIMixedMode.Web.Controllers.RenderMvc.ExtendedModel>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = null;
+}
+
+<p>Popular IoC list:</p>
+
+@*https://our.umbraco.org/documentation/reference/routing/custom-controllers*@
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>@item</li>
+    }
+</ul>

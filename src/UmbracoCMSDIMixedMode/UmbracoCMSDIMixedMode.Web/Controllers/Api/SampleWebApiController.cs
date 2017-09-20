@@ -16,6 +16,7 @@ namespace UmbracoCMSDIMixedMode.Web.Controllers.Api
         [System.Web.Http.HttpGet]
         public JsonResult Get()
         {
+            //unit test: http://blog.aabech.no/archive/the-basics-of-unit-testing-umbraco/
             return new JsonResult() { Data = new { items = _sampleService.GetItems() }, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
     }
